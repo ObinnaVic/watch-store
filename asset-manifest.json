@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/watch-store/static/css/main.0933f784.css",
+    "main.css": "/watch-store/static/css/main.6655a112.css",
     "main.js": "/watch-store/static/js/main.c2e423ef.js",
     "static/js/787.f833b7b0.chunk.js": "/watch-store/static/js/787.f833b7b0.chunk.js",
     "static/media/headBackground.gif": "/watch-store/static/media/headBackground.041675117afdd4269012.gif",
@@ -25,12 +25,12 @@
     "static/media/breitlingWatch.png": "/watch-store/static/media/breitlingWatch.9cade027ec6108358937.png",
     "static/media/aboutImage.jpg": "/watch-store/static/media/aboutImage.b5d85b3c612a35dcf5d3.jpg",
     "index.html": "/watch-store/index.html",
-    "main.0933f784.css.map": "/watch-store/static/css/main.0933f784.css.map",
+    "main.6655a112.css.map": "/watch-store/static/css/main.6655a112.css.map",
     "main.c2e423ef.js.map": "/watch-store/static/js/main.c2e423ef.js.map",
     "787.f833b7b0.chunk.js.map": "/watch-store/static/js/787.f833b7b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0933f784.css",
+    "static/css/main.6655a112.css",
     "static/js/main.c2e423ef.js"
   ]
 }
