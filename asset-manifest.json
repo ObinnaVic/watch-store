@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/watch-store/static/css/main.0933f784.css",
+    "main.js": "/watch-store/static/js/main.c2e423ef.js",
+    "static/js/787.f833b7b0.chunk.js": "/watch-store/static/js/787.f833b7b0.chunk.js",
+    "static/media/headBackground.gif": "/watch-store/static/media/headBackground.041675117afdd4269012.gif",
+    "static/media/greenTick.gif": "/watch-store/static/media/greenTick.05a6644ad77e5b4f2e08.gif",
+    "static/media/VictorNkire.jpg": "/watch-store/static/media/VictorNkire.6cbaac32d6dd2ffe9854.jpg",
+    "static/media/watchLogo.png": "/watch-store/static/media/watchLogo.19d5d1f76f3495e9cab2.png",
+    "static/media/watchBackground.png": "/watch-store/static/media/watchBackground.dc0ce7e8cc2a26b10549.png",
+    "static/media/newsTwo.webp": "/watch-store/static/media/newsTwo.52fecb6fa60fc3402b72.webp",
+    "static/media/LouisBrequet.jpg": "/watch-store/static/media/LouisBrequet.c2cc82c240419a15ac1a.jpg",
+    "static/media/allWatch.png": "/watch-store/static/media/allWatch.b19838529fa43f33dc3d.png",
+    "static/media/seiko.png": "/watch-store/static/media/seiko.0bfbdad01ea2bec4245b.png",
+    "static/media/newsThree.webp": "/watch-store/static/media/newsThree.c53fcd85248b0da67358.webp",
+    "static/media/warrenBuffett.jpg": "/watch-store/static/media/warrenBuffett.4f85104670de41991d03.jpg",
+    "static/media/newsOne.webp": "/watch-store/static/media/newsOne.cf48b63c3b57666e7570.webp",
+    "static/media/headimg.png": "/watch-store/static/media/headimg.6e2d4b82b3bbc41770ef.png",
+    "static/media/male.png": "/watch-store/static/media/male.75c2c97a8dced2445040.png",
+    "static/media/appleWatch.png": "/watch-store/static/media/appleWatch.ab14e3bdd8e3a770981b.png",
+    "static/media/productBackground.jpg": "/watch-store/static/media/productBackground.1c66acf284bd554549c9.jpg",
+    "static/media/citizenWatch.png": "/watch-store/static/media/citizenWatch.fcaf0e178fa8a91adfe0.png",
+    "static/media/female.png": "/watch-store/static/media/female.efe595c55f8550efd379.png",
+    "static/media/BillGates.jpg": "/watch-store/static/media/BillGates.4fff3ecb317fd1c44caa.jpg",
+    "static/media/breitlingWatch.png": "/watch-store/static/media/breitlingWatch.9cade027ec6108358937.png",
+    "static/media/aboutImage.jpg": "/watch-store/static/media/aboutImage.b5d85b3c612a35dcf5d3.jpg",
+    "index.html": "/watch-store/index.html",
+    "main.0933f784.css.map": "/watch-store/static/css/main.0933f784.css.map",
+    "main.c2e423ef.js.map": "/watch-store/static/js/main.c2e423ef.js.map",
+    "787.f833b7b0.chunk.js.map": "/watch-store/static/js/787.f833b7b0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0933f784.css",
+    "static/js/main.c2e423ef.js"
+  ]
+}
