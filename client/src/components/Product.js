@@ -20,7 +20,7 @@ const Product = () => {
     }
 
     useEffect(() => {
-      filterProducts()
+      filterProducts();
     }, [id]);
 
     // FUNNCTION WHICH FILTERS OUT AND DISPLAY THE PARTICULAR PRODUCT CLICKED ON

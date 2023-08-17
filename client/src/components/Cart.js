@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useGlobalContext } from './context';
 
-const Cart = () => {
+const Cart = ({setAmount}) => {
   const { cart, user } = useGlobalContext();
   const [data, setData] = useState(flatten(cart));
   const [subtotal, setSubTotal] = useState(0);
@@ -66,6 +66,7 @@ const Cart = () => {
     );
     setSubTotal(total);
     setTotal(total + 15);
+    setAmount(total);
   };
 
   //   FUNCTION IF THE CART AND DATA IS EMPTY

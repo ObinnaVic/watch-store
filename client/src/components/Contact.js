@@ -141,6 +141,7 @@ const Contact = () => {
                   }}
                 >
                   <iframe
+                    title=' mapping'
                     width="100%"
                     height="400"
                     id="gmap_canvas"
@@ -150,7 +151,7 @@ const Contact = () => {
                     marginHeight="0"
                     marginWidth="0"
                   ></iframe>
-                  <a href="https://putlocker-is.org"></a>
+                  <a href="https://putlocker-is.org">.</a>
                   <br />
                   <a href="https://www.embedgooglemap.net">
                     embed google map in html

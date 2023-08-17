@@ -4,7 +4,8 @@ import watchLogo from '../img/watchLogo.png';
 import { useGlobalContext } from './context';
 
 const Nav = () => {
-    const {nav, openNav, closeNav, user} = useGlobalContext();
+    const { nav, openNav, closeNav, user,currentAccount, disconnectWallet } =
+      useGlobalContext();
     return (
       <div>
         {/* Mobile Top Bar */}
@@ -79,6 +80,11 @@ const Nav = () => {
                 Contact
               </Link>
             </div>
+            {currentAccount ? (
+              <button type="button" onClick={disconnectWallet}>"Disconnect Account"</button>
+            ) : (
+              ""
+            )}
             <Link
               to="/signin"
               className="nav-item nav-link fw-bold ms-lg-auto"
