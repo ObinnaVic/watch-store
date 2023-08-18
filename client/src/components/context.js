@@ -48,7 +48,8 @@ export const ContextApp = ({children}) => {
     city: "",
     zip: "",
   });
-  const [address, setAddress] = useState(null)
+  const [address, setAddress] = useState(null);
+  const [connectLoader, setConnectLoader] = useState(false); 
 
   //function to input the data from the input section of the billing page
   const handleForm = (e, name) => {
@@ -113,7 +114,9 @@ export const ContextApp = ({children}) => {
   // Add to cart function
   const addCart = (id) => {
     const cartProduct = data.filter((item) => item.id === id);
-    setCart([...cart, cartProduct]);
+    // setCart([...cart, cartProduct]);
+    let savedCart = JSON.stringify([...cart, cartProduct]);
+    localStorage.setItem("cart", savedCart);
     setGoToCart(true);
     setCartAlert(true);
     setTimeout(function () {
@@ -149,15 +152,16 @@ export const ContextApp = ({children}) => {
     }
   };
 
-  const connectWallet = async () => {
+  const connectWallet = async (event) => {
     try {
+      event.preventDefault();
       if (!ethereum) return alert("Please Install Metamask");
+      setConnectLoader(true);
       const account = await ethereum.request({ method: "eth_requestAccounts" });
       setCurrentAccount(account[0]);
-      
+      setConnectLoader(false);
     } catch (error) {
       console.log(error);
-      throw new error("no ethereum object");
     }
   };
 
@@ -212,7 +216,8 @@ export const ContextApp = ({children}) => {
         formData,
         setFormData,
         disconnectWallet,
-        address
+        address,
+        connectLoader
       }}
     >
       {children}

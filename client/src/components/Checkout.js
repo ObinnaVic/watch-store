@@ -14,7 +14,7 @@ const Input = ({placeholder, name, type, handleForm}) => {
 };
 
 const Checkout = ({amount}) => {
-  const { setCart, bank, HandleBill, formData, setFormData, handleForm, wallet, connectWallet, currentAccount, address } = useGlobalContext();
+  const { setCart, bank, HandleBill, setFormData, handleForm, wallet, connectWallet, currentAccount, connectLoader, address } = useGlobalContext();
   
 
   const submitForm = () => {
@@ -561,7 +561,7 @@ const Checkout = ({amount}) => {
                               }
                               onClick={connectWallet}
                             >
-                              Connect Wallet
+                               {connectLoader? <span>Connecting...</span> : <span>Connect</span>}
                             </button>
                           )}
                         </div>
