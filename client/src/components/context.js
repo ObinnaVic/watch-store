@@ -114,9 +114,7 @@ export const ContextApp = ({children}) => {
   // Add to cart function
   const addCart = (id) => {
     const cartProduct = data.filter((item) => item.id === id);
-    // setCart([...cart, cartProduct]);
-    let savedCart = JSON.stringify([...cart, cartProduct]);
-    localStorage.setItem("cart", savedCart);
+    setCart([...cart, cartProduct]);
     setGoToCart(true);
     setCartAlert(true);
     setTimeout(function () {
@@ -217,7 +215,8 @@ export const ContextApp = ({children}) => {
         setFormData,
         disconnectWallet,
         address,
-        connectLoader
+        connectLoader,
+        getContract
       }}
     >
       {children}

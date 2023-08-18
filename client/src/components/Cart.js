@@ -3,12 +3,8 @@ import { Link } from 'react-router-dom';
 import { useGlobalContext } from './context';
 
 
-const getCart = localStorage.getItem("cart");
-const cart = JSON.parse(getCart);
-
 const Cart = ({setAmount}) => {
-  // const { cart, user } = useGlobalContext();
-  const {user} = useGlobalContext();
+  const { cart, user } = useGlobalContext();
   const [data, setData] = useState(flatten(cart));
   const [subtotal, setSubTotal] = useState(0);
   const [total, setTotal] = useState(1);

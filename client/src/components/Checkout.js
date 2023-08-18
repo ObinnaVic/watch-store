@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { useGlobalContext } from './context';
+import { ethers } from "ethers";
+
+const { ethereum } = window;
 
 const Input = ({placeholder, name, type, handleForm}) => {
   return (
@@ -14,18 +17,39 @@ const Input = ({placeholder, name, type, handleForm}) => {
 };
 
 const Checkout = ({amount}) => {
-  const { setCart, bank, HandleBill, setFormData, handleForm, wallet, connectWallet, currentAccount, connectLoader, address } = useGlobalContext();
-  
+  const { setCart, bank, HandleBill, setFormData, handleForm, connectWallet, currentAccount, connectLoader, address, getContract } = useGlobalContext();
+  const [paymentLoader, setPaymentLoader] = useState(false);
 
-  const submitForm = () => {
-    if (wallet) {
-      console.log("Yes this is wallet");
+  const sendCrypto = async () => {
+    try {
+      if (!ethereum) alert("Please Install Metamask");
+      const transactions = await getContract();
+      const parseAmount = ethers.utils.parseEther(amount); 
+      await ethereum.request({
+        method: "eth_sendTransaction",
+        params: [{
+          from: currentAccount,
+          to: address,
+          gas: "0x5205", //21000 gwei
+          value: parseAmount._hex
+        }]
+      })
+      const transactionHash = transactions.addToBlockchain(amount);
+
+      setPaymentLoader(true);
+      console.log(`Loading... - ${transactionHash.hash}`);
+      await transactionHash.wait();
+      console.log(`Success - ${transactionHash.hash}`);
+
       setCart([]);
-    } else {
-      setFormData({name: "", email: "", address: "", addressTwo: "", city: "", zip: ""})
-      setCart([]);
+    } catch (error) {
+      console.log(error);
     }
-
+  }
+  
+  const submitForm = () => {
+    setFormData({name: "", email: "", address: "", addressTwo: "", city: "", zip: ""})
+    setCart([]);
   }
   
 
@@ -546,7 +570,7 @@ const Checkout = ({amount}) => {
                               class={
                                 "btn rounded px-3 px-lg-4 bg-dark text-light"
                               }
-                              onClick={submitForm}
+                              onClick={sendCrypto}
                             >
                               Place Order
                               <p className="text-danger">
