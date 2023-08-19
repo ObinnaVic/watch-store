@@ -16,21 +16,40 @@ const Input = ({placeholder, name, type, handleForm}) => {
   );
 };
 
+const GetETHExchangeRate = async () => {
+  var requestOptions = { method: "GET", redirect: "follow" };
+  return fetch(
+    "https://api.coinbase.com/v2/exchange-rates?currency=USD",
+    requestOptions
+  )
+    .then((response) => response.json())
+    .then((result) => {
+      return result.data.rates.ETH;
+    })
+    .catch((error) => {
+      return  error;
+    });
+};
+
+
 const Checkout = ({amount}) => {
   const { setCart, bank, HandleBill, setFormData, handleForm, connectWallet, currentAccount, connectLoader, address, getContract } = useGlobalContext();
   const [paymentLoader, setPaymentLoader] = useState(false);
-
+  
   const sendCrypto = async () => {
     try {
       if (!ethereum) alert("Please Install Metamask");
       const transactions = await getContract();
-      const parseAmount = ethers.utils.parseEther(amount); 
+      let result = await GetETHExchangeRate();
+      let convertedAmount = (amount * result).toFixed(2);
+      const parseAmount = ethers.utils.parseEther(convertedAmount.toString());
+
       await ethereum.request({
         method: "eth_sendTransaction",
         params: [{
           from: currentAccount,
           to: address,
-          gas: "0x5205", //21000 gwei
+          gas: "0x5208", //21000 gwei
           value: parseAmount._hex
         }]
       })
