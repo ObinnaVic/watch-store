@@ -50,6 +50,8 @@ export const ContextApp = ({children}) => {
   });
   const [address, setAddress] = useState(null);
   const [connectLoader, setConnectLoader] = useState(false); 
+  const [transactionHash, setTransactionHash] = useState("");
+  const [paymentLoader, setPaymentLoader] = useState(false);
 
   //function to input the data from the input section of the billing page
   const handleForm = (e, name) => {
@@ -216,7 +218,11 @@ export const ContextApp = ({children}) => {
         disconnectWallet,
         address,
         connectLoader,
-        getContract
+        getContract,
+        transactionHash,
+        setTransactionHash,
+        paymentLoader,
+        setPaymentLoader
       }}
     >
       {children}

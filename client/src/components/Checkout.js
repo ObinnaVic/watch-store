@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useGlobalContext } from './context';
 import { ethers } from "ethers";
@@ -33,13 +33,27 @@ const GetETHExchangeRate = async () => {
 
 
 const Checkout = ({amount}) => {
-  const { setCart, bank, HandleBill, setFormData, handleForm, connectWallet, currentAccount, connectLoader, address, getContract } = useGlobalContext();
-  const [paymentLoader, setPaymentLoader] = useState(false);
+  const {
+    setCart,
+    bank,
+    HandleBill,
+    setFormData,
+    handleForm,
+    connectWallet,
+    currentAccount,
+    connectLoader,
+    address,
+    getContract,
+    setTransactionHash,
+    setPaymentLoader
+  } = useGlobalContext();
+  
   
   const sendCrypto = async () => {
     try {
+      setPaymentLoader(true);
       if (!ethereum) alert("Please Install Metamask");
-      const transactions = await getContract();
+      const transactions = getContract();
       let result = await GetETHExchangeRate();
       let convertedAmount = (amount * result).toFixed(2);
       const parseAmount = ethers.utils.parseEther(convertedAmount.toString());
@@ -53,13 +67,12 @@ const Checkout = ({amount}) => {
           value: parseAmount._hex
         }]
       })
-      const transactionHash = transactions.addToBlockchain(amount);
-
-      setPaymentLoader(true);
+      const transactionHash = await transactions.addToBlockchain(amount);
+      setTransactionHash(transactionHash);
       console.log(`Loading... - ${transactionHash.hash}`);
       await transactionHash.wait();
+      setPaymentLoader(false);
       console.log(`Success - ${transactionHash.hash}`);
-
       setCart([]);
     } catch (error) {
       console.log(error);
@@ -570,21 +583,20 @@ const Checkout = ({amount}) => {
                   </div>
                 </div>
                 <div class="col-12">
-                    <div>
-                      {bank ? (
-                        <Link to={"/orderplaced"}>
-                          <button
-                            class={
-                              "btn rounded px-3 px-lg-4 bg-dark text-light"
-                            }
-                            onClick={submitForm}
-                          >
-                            Place Order
-                          </button>
-                        </Link>
-                      ) : (
-                        <div>
-                          {currentAccount ? (
+                  <div>
+                    {bank ? (
+                      <Link to={"/orderplaced"}>
+                        <button
+                          class={"btn rounded px-3 px-lg-4 bg-dark text-light"}
+                          onClick={submitForm}
+                        >
+                          Place Order
+                        </button>
+                      </Link>
+                    ) : (
+                      <div>
+                        {currentAccount ? (
+                          <Link to={"/orderplaced"}>
                             <button
                               class={
                                 "btn rounded px-3 px-lg-4 bg-dark text-light"
@@ -597,19 +609,24 @@ const Checkout = ({amount}) => {
                                 {currentAccount.slice(-6)}
                               </p>
                             </button>
-                          ) : (
-                            <button
-                              class={
-                                "btn rounded px-3 px-lg-4 bg-dark text-light"
-                              }
-                              onClick={connectWallet}
-                            >
-                               {connectLoader? <span>Connecting...</span> : <span>Connect</span>}
-                            </button>
-                          )}
-                        </div>
-                      )}
-                    </div>
+                          </Link>
+                        ) : (
+                          <button
+                            class={
+                              "btn rounded px-3 px-lg-4 bg-dark text-light"
+                            }
+                            onClick={connectWallet}
+                          >
+                            {connectLoader ? (
+                              <span>Connecting...</span>
+                            ) : (
+                              <span>Connect</span>
+                            )}
+                          </button>
+                        )}
+                      </div>
+                    )}
+                  </div>
                 </div>
               </form>
             </div>
