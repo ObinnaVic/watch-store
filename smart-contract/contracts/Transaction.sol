@@ -14,6 +14,7 @@ contract Transaction {
         address receiver;
         address sender;
         uint amount;
+        string message;
         uint time;
     }
 
@@ -21,9 +22,9 @@ contract Transaction {
 
     event Transfer(address receiver, address sender, uint amount, uint timeStamp);
 
-    function addToBlockchain(uint amount) public {
+    function addToBlockchain(uint amount, string memory message) public { 
         transactionCount++;
-        transactions.push(TransactionList(owner, msg.sender, amount, block.timestamp));
+        transactions.push(TransactionList(owner, msg.sender, amount, message, block.timestamp));
         emit Transfer(owner, msg.sender, amount, block.timestamp);
     }
 

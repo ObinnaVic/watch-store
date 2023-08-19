@@ -81,7 +81,13 @@ const Nav = () => {
               </Link>
             </div>
             {currentAccount ? (
-              <button type="button" onClick={disconnectWallet}>"Disconnect Account"</button>
+              <button
+                type="button"
+                className="nav-item nav-link fw-bold"
+                onClick={disconnectWallet}
+              >
+                Disconnect-wallet
+              </button>
             ) : (
               ""
             )}

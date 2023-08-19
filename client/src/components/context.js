@@ -145,7 +145,7 @@ export const ContextApp = ({children}) => {
       if (!ethereum) return alert("Please Install metamask");
       const account = await ethereum.request({ method: "eth_accounts" });
       setCurrentAccount(account[0]);
-      let transactionAddy = getContract().address;
+      let transactionAddy = await getContract().owner();
       setAddress(transactionAddy);
     } catch (error) {
       console.log(error);

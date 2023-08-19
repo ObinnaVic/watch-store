@@ -60,17 +60,21 @@ const Checkout = ({amount}) => {
 
       await ethereum.request({
         method: "eth_sendTransaction",
-        params: [{
-          from: currentAccount,
-          to: address,
-          gas: "0x5208", //21000 gwei
-          value: parseAmount._hex
-        }]
-      })
-      const transactionHash = await transactions.addToBlockchain(amount);
-      setTransactionHash(transactionHash);
+        params: [
+          {
+            from: currentAccount,
+            to: address,
+            gas: "0x5208", //21000 gwei
+            value: parseAmount._hex,
+          },
+        ],
+      });
+      const transactionHash = await transactions.addToBlockchain(
+        parseAmount, "payment sent"
+      );
       console.log(`Loading... - ${transactionHash.hash}`);
       await transactionHash.wait();
+      setTransactionHash(transactionHash);
       setPaymentLoader(false);
       console.log(`Success - ${transactionHash.hash}`);
       setCart([]);

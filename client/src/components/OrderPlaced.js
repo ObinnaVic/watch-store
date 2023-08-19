@@ -8,7 +8,14 @@ import { useGlobalContext } from "./context";
 const OrderPlaced = () => {
   const {transactionHash, paymentLoader} = useGlobalContext();
 
-  
+    const copyText = () => {
+      // Copy the transactionHash
+      navigator.clipboard.writeText(transactionHash.hash);
+
+      // Alert the copied text
+      alert("Copied the text: " + transactionHash.hash);
+    }
+
     return (
       <div>
         <div className="product-sec">
@@ -18,7 +25,6 @@ const OrderPlaced = () => {
           {paymentLoader ? (
             <div>
               <img src={loader} style={{ width: "10%" }} alt="loading..." />
-              {transactionHash.hash}
             </div>
           ) : (
             <div>
@@ -30,7 +36,17 @@ const OrderPlaced = () => {
                 Your order is accepted. A customer guide would contact you
                 shortly for more details.
               </p>
-              <p className='text-light'>{transactionHash.hash}</p>
+              <p>transaction Hash:</p>
+              <p className="text-light">
+                {transactionHash.hash.slice(0, 8)}...
+                {transactionHash.hash.slice(-8)}
+              </p>
+              <button
+                className="btn btn-link fw-bold"
+                onClick={copyText}
+              >
+                Copy Hash
+              </button>
             </div>
           )}
         </div>
