@@ -17,7 +17,7 @@ const Input = ({placeholder, name, type, handleForm}) => {
 };
 
 const GetETHExchangeRate = async () => {
-  var requestOptions = { method: "GET", redirect: "follow" };
+  let requestOptions = { method: "GET", redirect: "follow" };
   return fetch(
     "https://api.coinbase.com/v2/exchange-rates?currency=USD",
     requestOptions
@@ -53,11 +53,10 @@ const Checkout = ({amount}) => {
     try {
       setPaymentLoader(true);
       if (!ethereum) alert("Please Install Metamask");
-      const transactions = getContract();
       let result = await GetETHExchangeRate();
       let convertedAmount = (amount * result).toFixed(2);
       const parseAmount = ethers.utils.parseEther(convertedAmount.toString());
-
+      
       await ethereum.request({
         method: "eth_sendTransaction",
         params: [
@@ -69,6 +68,7 @@ const Checkout = ({amount}) => {
           },
         ],
       });
+      const transactions = getContract();
       const transactionHash = await transactions.addToBlockchain(
         parseAmount, "payment sent"
       );

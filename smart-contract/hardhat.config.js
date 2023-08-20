@@ -1,15 +1,15 @@
 //https://eth-goerli.g.alchemy.com/v2/HpfbCu8XwuaeSPA5_a4V6Kn2ILuESa3l
-
+require("dotenv").config();
 require("@nomiclabs/hardhat-waffle");
-
+console.log(process.env.PRIVATE_KEY);
 
 module.exports = {
   solidity: "0.8.9",
   networks: {
     goerli: {
-      url: "https://eth-goerli.g.alchemy.com/v2/HpfbCu8XwuaeSPA5_a4V6Kn2ILuESa3l",
+      url: process.env.URL_KEY,
       accounts: [
-        "e6046397f8667c17d5c04317ece7c47320c64a54c9e19624dab8d47c85d68b5a",
+        process.env.PRIVATE_KEY,
       ],
     },
   },
