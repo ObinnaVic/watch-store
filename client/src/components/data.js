@@ -8,7 +8,7 @@ export const data = [
     description:
       "Titan Pro Diver White Dial Yellow Bronze-plated Mens Watch 8936",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663543518/samples/new_watch_4_xch4ld.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/c_scale,q_52,w_198/v1663543518/samples/new_watch_4_xch4ld.avif",
     amount: 1,
   },
   {
@@ -19,7 +19,7 @@ export const data = [
     price: 325,
     description: "Silhouette Crystal-Ladies Eco-Drive Gold Diamond Watch",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663361132/samples/female_1_hdgxcj.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/c_scale,q_51,w_296/v1663361132/samples/female_1_hdgxcj.avif",
     amount: 1,
   },
   {
@@ -31,7 +31,7 @@ export const data = [
     description:
       "Calvin Klein Completion Chronograph Quartz Black Dial Men Watch KAM271C6",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328886/samples/watch_2_dxjcfw.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_50/v1663328886/samples/watch_2_dxjcfw.avif",
     amount: 1,
   },
   {
@@ -43,7 +43,7 @@ export const data = [
     description:
       "Citizen Disney Mickey Mouse Black Dial Ladies Watch FE7060-56W",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328886/samples/watch_3_ypifwt.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_50/v1663328886/samples/watch_3_ypifwt.avif",
     amount: 1,
   },
   {
@@ -54,7 +54,7 @@ export const data = [
     price: 53,
     description: "3-Peat on Rose Gold & White Ice Watch",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663361129/samples/female_9_ps7ox4.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/c_scale,q_50,w_267/v1663361129/samples/female_9_ps7ox4.avif",
     amount: 1,
   },
   {
@@ -65,7 +65,7 @@ export const data = [
     price: 79,
     description: "Fossil Gwen Quartz Crystal White Dial Ladies Watch ES4877",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328886/samples/watch_4_m5er5a.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_50/v1663328886/samples/watch_4_m5er5a.avif",
     amount: 1,
   },
   {
@@ -77,7 +77,7 @@ export const data = [
     description:
       "Timex Mens Easy Reader 35mm Watch Box Set TwoTone Case White Dial with Tapered Expansion Band Brown Leather Strap",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328885/samples/watch_8_qb8ouo.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/c_scale,q_auto:eco,w_363/v1663328885/samples/watch_1_r7lxqf.avif",
     amount: 1,
   },
   {
@@ -89,7 +89,7 @@ export const data = [
     description:
       "Bulova Mens Curv Collection Stainless Steel Chronograph Watch",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328885/samples/watch_9_ujar3j.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663328885/samples/watch_9_ujar3j.avif",
     amount: 1,
   },
   {
@@ -100,7 +100,7 @@ export const data = [
     price: 76,
     description: "TITAN Bronze Women Standard And Multipurpose Outdoor Watch",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663361129/samples/female_5_w4a9v5.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663361129/samples/female_5_w4a9v5.avif",
     amount: 1,
   },
   {
@@ -112,7 +112,7 @@ export const data = [
     description:
       "Citizen EW5510-53N Womens Disney Silver Bracelet Diamond Watch",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328886/samples/watch_6_cckce3.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663328886/samples/watch_6_cckce3.avif",
     amount: 1,
   },
   {
@@ -123,7 +123,7 @@ export const data = [
     price: 96,
     description: "Bulgari B.zero1 Quartz Watch 102087-E Bvlgari",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663361129/samples/female_10_zqslux.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/c_scale,q_auto:eco,w_372/v1663361129/samples/female_10_zqslux.avif",
     amount: 1,
   },
   {
@@ -135,7 +135,7 @@ export const data = [
     description:
       "G-Times Gold Simple Luxury Watch With 32mm. Classic And Exclusive",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663361129/samples/female_2_swqoj0.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/c_scale,q_auto:eco,w_331/v1663361129/samples/female_2_swqoj0.avif",
     amount: 1,
   },
   {
@@ -147,7 +147,7 @@ export const data = [
     description:
       "Raidillon Smart Completion Chronograph Quartz Black Dial Men Watch 74RI",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328885/samples/2cd43b_4831aa95b60d46b7959e2e9bfb564e2b_mv2_h6zb0a.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/c_scale,q_auto:eco,w_382/v1663328885/samples/2cd43b_4831aa95b60d46b7959e2e9bfb564e2b_mv2_h6zb0a.avif",
     amount: 1,
   },
   {
@@ -158,7 +158,7 @@ export const data = [
     price: 230,
     description: "Citizen Mens Eco-Drive Corso Chronograph Watch AT2142-52L",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328886/samples/watch_7_vem7pc.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663328886/samples/watch_7_vem7pc.avif",
     amount: 1,
   },
   {
@@ -170,7 +170,7 @@ export const data = [
     description:
       "G-Times Silver Simple Luxury Watch With 30mm. Classic And Exclusive",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663361128/samples/female_4_ippfb1.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663361128/samples/female_4_ippfb1.avif",
     amount: 1,
   },
   {
@@ -182,7 +182,7 @@ export const data = [
     description:
       "Rolex Gwen Quartz Bright Yellow Black Dial Ladies Watch ES1257",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663542616/samples/new_watch_zhvvzm.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/c_scale,q_auto:eco,w_350/v1663542616/samples/new_watch_zhvvzm.avif",
     amount: 1,
   },
   {
@@ -194,7 +194,7 @@ export const data = [
     description:
       "Guccify Yourself: Black Skin Smooth Feel With Gold Classic Interiors 33mm",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663363475/samples/female_11_vovell.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/c_scale,q_auto:eco,w_207/v1663363475/samples/female_11_vovell.avif",
     amount: 1,
   },
   {
@@ -206,7 +206,7 @@ export const data = [
     description:
       "Calvin Klein Noon Chronograph Quartz Red Dial Mens Watch K8M211CT",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328886/samples/watch_5_q0rv25.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663328886/samples/watch_5_q0rv25.avif",
     amount: 1,
   },
   {
@@ -217,7 +217,7 @@ export const data = [
     price: 190,
     description: "Officina Del Tempo ot1050 WATCH, Satin Strap Color: Mar",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328885/samples/watch_1_r7lxqf.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663328885/samples/watch_8_qb8ouo.avif",
     amount: 1,
   },
   {
