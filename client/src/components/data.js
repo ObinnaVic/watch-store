@@ -228,7 +228,7 @@ export const data = [
     price: 168,
     description: "Bulova Hack Automatic Ivory Dial Mens Watch 25A179",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328885/samples/watch_15_ygonqc.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663328885/samples/watch_15_ygonqc.avif",
     amount: 1,
   },
   {
@@ -240,7 +240,7 @@ export const data = [
     description:
       "TIMEX Japan Limited Original Camper 29mm Black Leather watch TW2T34000",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328885/samples/watch_14_eljdsb.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663328885/samples/watch_14_eljdsb.avif",
     amount: 1,
   },
   {
@@ -252,7 +252,7 @@ export const data = [
     description:
       "Beautiful Flower Megir Chic Ladies Watch. Classic and Beautiful Feel At All Times",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663361128/samples/female_8_jxvmjf.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/c_scale,q_auto:eco,w_364/v1663361128/samples/female_8_jxvmjf.avif",
     amount: 1,
   },
   {
@@ -264,7 +264,7 @@ export const data = [
     description:
       "For New Apple iWatch 45mm 42mm Band, Mignova Genuine Leather Strap Replacement Band With Stainless Mental Clasp For Apple iWatch Series 7",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328884/samples/watch_19_jnjjgj.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663328884/samples/watch_19_jnjjgj.avif",
     amount: 1,
   },
   {
@@ -275,7 +275,7 @@ export const data = [
     price: 1275,
     description: "Rolex Submariner Mens Black Watch -F43709",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328885/samples/watch_12_zxjajp.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663328885/samples/watch_12_zxjajp.avif",
     amount: 1,
   },
   {
@@ -287,7 +287,7 @@ export const data = [
     description:
       "Casio G-Shock Alarm World Time Quartz Analog-Digital Mens Watch GA110RG1ADR",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328884/samples/watch_13_a9kasx.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663328884/samples/watch_13_a9kasx.avif",
     amount: 1,
   },
   {
@@ -299,7 +299,7 @@ export const data = [
     description:
       "Stainless-steel quartz watch. Diamond, silver-tone accents and adjustable band.",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663361128/samples/female_6_rraqfx.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663361128/samples/female_6_rraqfx.avif",
     amount: 1,
   },
   {
@@ -310,7 +310,7 @@ export const data = [
     price: 109,
     description: "Apple Watch Series 4 (GPS + Cellular) 40mm Smartwatch",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328884/samples/watch_16_p2gaej.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663328884/samples/watch_16_p2gaej.avif",
     amount: 1,
   },
   {
@@ -321,7 +321,7 @@ export const data = [
     price: 188,
     description: "Garmin Venu Light Sand with Rose Silver Hardware",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328884/samples/watch_20_uh4ycv.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/c_scale,q_auto:eco,w_356/v1663328884/samples/watch_20_uh4ycv.avif",
     amount: 1,
   },
   {
@@ -332,7 +332,7 @@ export const data = [
     price: 79,
     description: "Silhouette Crystal-Ladies Eco-Drive Gold Diamond Watch",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663361127/samples/female_7_dtdwgz.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663361127/samples/female_7_dtdwgz.avif",
     amount: 1,
   },
   {
@@ -344,7 +344,7 @@ export const data = [
     description:
       "DZ09 Black Bluetooth Smart Wrist Watch Phone Mate Touch Screen",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663328884/samples/watch_17_ynmra8.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663328884/samples/watch_17_ynmra8.avif",
     amount: 1,
   },
   {
@@ -355,7 +355,7 @@ export const data = [
     price: 44.99,
     description: "Rolex Paris CO6394A2 Men's Watch",
     image:
-      "https://res.cloudinary.com/dprw6oeba/image/upload/v1663542822/samples/new_watch_2_slrayu.png",
+      "https://res.cloudinary.com/dprw6oeba/image/upload/q_auto:eco/v1663328885/samples/watch_10_dcnzap.avif",
     amount: 1,
   },
 ];
