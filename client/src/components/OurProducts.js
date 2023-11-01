@@ -41,7 +41,7 @@ const OurProducts = () => {
             width: "100%",
             padding: 20,
           }}
-          count={info.length / 10}
+          count={Math.ceil(info.length / 10)}
           onChange={(_, value) => {
             setPage(value);
           }}
