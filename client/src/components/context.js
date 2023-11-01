@@ -139,13 +139,16 @@ export const ContextApp = ({children}) => {
     e === "bank" ? setBank(true) : setBank(false);
   };
 
-  //A function that checks if wallet is installed or not
+  // A function that checks if wallet is installed or not
   const walletConnection = async () => {
     try {
       if (!ethereum) return alert("Please Install metamask");
       const account = await ethereum.request({ method: "eth_accounts" });
+      console.log(account);
       setCurrentAccount(account[0]);
       let transactionAddy = await getContract().owner();
+      console.log(currentAccount);
+      console.log(transactionAddy);
       setAddress(transactionAddy);
     } catch (error) {
       console.log(error);

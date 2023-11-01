@@ -102,7 +102,7 @@ const Checkout = ({amount}) => {
               <div className="d-flex">
                 <div>
                   <input
-                    class="form-check-input me-3"
+                    className="form-check-input me-3"
                     type="radio"
                     name="gridRadios"
                     id="gridRadios1"
@@ -122,7 +122,7 @@ const Checkout = ({amount}) => {
               <div className="d-flex">
                 <div>
                   <input
-                    class="form-check-input me-3"
+                    className="form-check-input me-3"
                     type="radio"
                     name="gridRadios"
                     id="gridRadios1"
@@ -143,11 +143,11 @@ const Checkout = ({amount}) => {
           </form>
           <div className="col-sm-12 col-lg-6 mt-5 mt-lg-0">
             <div>
-              <form class="row g-3">
+              <form className="row g-3">
                 {bank ? (
                   <>
-                    <div class="col-md-6">
-                      <label for="inputEmail4" class="form-label">
+                    <div className="col-md-6">
+                      <label htmlFor="inputEmail4" className="form-label">
                         Name
                       </label>
                       <Input
@@ -157,8 +157,8 @@ const Checkout = ({amount}) => {
                         handleForm={handleForm}
                       />
                     </div>
-                    <div class="col-md-6">
-                      <label for="inputPassword4" class="form-label">
+                    <div className="col-md-6">
+                      <label htmlFor="inputPassword4" className="form-label">
                         Email
                       </label>
                       <Input
@@ -168,8 +168,8 @@ const Checkout = ({amount}) => {
                         handleForm={handleForm}
                       />
                     </div>
-                    <div class="col-12">
-                      <label for="inputAddress" class="form-label">
+                    <div className="col-12">
+                      <label htmlFor="inputAddress" className="form-label">
                         Address
                       </label>
                       <Input
@@ -179,8 +179,8 @@ const Checkout = ({amount}) => {
                         handleForm={handleForm}
                       />
                     </div>
-                    <div class="col-12">
-                      <label for="inputAddress2" class="form-label">
+                    <div className="col-12">
+                      <label htmlFor="inputAddress2" className="form-label">
                         Address 2
                       </label>
                       <Input
@@ -190,8 +190,8 @@ const Checkout = ({amount}) => {
                         handleForm={handleForm}
                       />
                     </div>
-                    <div class="col-md-6">
-                      <label for="inputCity" class="form-label">
+                    <div className="col-md-6">
+                      <label htmlFor="inputCity" className="form-label">
                         City
                       </label>
                       <Input
@@ -201,11 +201,11 @@ const Checkout = ({amount}) => {
                         handleForm={handleForm}
                       />
                     </div>
-                    <div class="col-md-4">
-                      <label for="inputState" class="form-label">
+                    <div className="col-md-4">
+                      <label htmlFor="inputState" className="form-label">
                         Country
                       </label>
-                      <select id="inputState" class="form-select">
+                      <select id="inputState" className="form-select">
                         <option selected>Choose...</option>
                         <option value="Afghanistan">Afghanistan</option>
                         <option value="Åland Islands">Åland Islands</option>
@@ -541,8 +541,8 @@ const Checkout = ({amount}) => {
                         <option value="Zimbabwe">Zimbabwe</option>
                       </select>
                     </div>
-                    <div class="col-md-2">
-                      <label for="inputZip" class="form-label">
+                    <div className="col-md-2">
+                      <label htmlFor="inputZip" className="form-label">
                         Zip
                       </label>
                       <Input
@@ -555,8 +555,8 @@ const Checkout = ({amount}) => {
                   </>
                 ) : (
                   <>
-                    <div class="col-md-6">
-                      <label for="address" class="form-label">
+                    <div className="col-md-6">
+                      <label htmlFor="address" className="form-label">
                         Wallet Address
                         {address && (
                           <p>
@@ -566,32 +566,32 @@ const Checkout = ({amount}) => {
                         )}
                       </label>
                     </div>
-                    <div class="d-flex flex-column col-md-6 align-items-center">
-                      <label for="inputPassword4" class="form-label">
+                    <div className="d-flex flex-column col-md-6 align-items-center">
+                      <label htmlFor="inputPassword4" className="form-label">
                         Amount
                       </label>
                       <div className="fw-bold">${amount}</div>
                     </div>
                   </>
                 )}
-                <div class="col-12">
-                  <div class="form-check">
+                <div className="col-12">
+                  <div className="form-check">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="checkbox"
                       id="gridCheck"
                     />
-                    <label class="form-check-label" for="gridCheck">
+                    <label className="form-check-label" htmlFor="gridCheck">
                       Click if you agree to our terms and conditions
                     </label>
                   </div>
                 </div>
-                <div class="col-12">
+                <div className="col-12">
                   <div>
                     {bank ? (
                       <Link to={"/orderplaced"}>
                         <button
-                          class={"btn rounded px-3 px-lg-4 bg-dark text-light"}
+                          className={"btn rounded px-3 px-lg-4 bg-dark text-light"}
                           onClick={submitForm}
                         >
                           Place Order
@@ -602,7 +602,7 @@ const Checkout = ({amount}) => {
                         {currentAccount ? (
                           <Link to={"/orderplaced"}>
                             <button
-                              class={
+                              className={
                                 "btn rounded px-3 px-lg-4 bg-dark text-light"
                               }
                               onClick={sendCrypto}
@@ -616,7 +616,7 @@ const Checkout = ({amount}) => {
                           </Link>
                         ) : (
                           <button
-                            class={
+                            className={
                               "btn rounded px-3 px-lg-4 bg-dark text-light"
                             }
                             onClick={connectWallet}

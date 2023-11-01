@@ -25,6 +25,7 @@ const OrderPlaced = () => {
           {paymentLoader ? (
             <div>
               <img src={loader} style={{ width: "10%" }} alt="loading..." />
+              <p>Waiting for wallet confirmation</p>
             </div>
           ) : (
             <div>

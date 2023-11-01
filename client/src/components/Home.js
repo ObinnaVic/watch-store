@@ -1,5 +1,5 @@
 import React from 'react';
-import headimg from '../img/headimg.png';
+import headimg from '../img/headimg.avif';
 import LandingPage from './LandingPage';
 
 
