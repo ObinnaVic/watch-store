@@ -1,7 +1,7 @@
 import React from 'react';
-import allWatch from '../img/allWatch.png';
-import female from '../img/female.png';
-import male from '../img/male.png';
+import allWatch from '../img/allWatch.avif';
+import female from '../img/female.avif';
+import male from '../img/male.avif';
 import { useGlobalContext } from './context';
 import OurProducts from "./OurProducts";
 import watchBackground from '../img/watchBackground.png';

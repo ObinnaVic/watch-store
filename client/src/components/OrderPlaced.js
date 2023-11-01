@@ -38,10 +38,11 @@ const OrderPlaced = () => {
                 shortly for more details.
               </p>
               <p>transaction Hash:</p>
-              <p className="text-light">
+              {transactionHash && 
+              (<p className="text-light">
                 {transactionHash.hash.slice(0, 8)}...
                 {transactionHash.hash.slice(-8)}
-              </p>
+              </p>)}
               <button
                 className="btn btn-link fw-bold"
                 onClick={copyText}

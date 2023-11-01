@@ -13,7 +13,7 @@ import {contractABI, contractAddress} from "../utils/constants";
 
 const AppContext = React.createContext();
 
-const {ethereum} = window;
+const { ethereum } = window;
 
 const getContract = () => {
   const provider = new ethers.providers.Web3Provider(ethereum);
@@ -144,11 +144,8 @@ export const ContextApp = ({children}) => {
     try {
       if (!ethereum) return alert("Please Install metamask");
       const account = await ethereum.request({ method: "eth_accounts" });
-      console.log(account);
       setCurrentAccount(account[0]);
       let transactionAddy = await getContract().owner();
-      console.log(currentAccount);
-      console.log(transactionAddy);
       setAddress(transactionAddy);
     } catch (error) {
       console.log(error);
