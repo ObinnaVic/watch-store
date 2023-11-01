@@ -159,6 +159,7 @@ export const ContextApp = ({children}) => {
       setConnectLoader(true);
       const account = await ethereum.request({ method: "eth_requestAccounts" });
       setCurrentAccount(account[0]);
+      walletConnection();
       setConnectLoader(false);
     } catch (error) {
       console.log(error);

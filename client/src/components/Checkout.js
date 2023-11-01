@@ -555,7 +555,8 @@ const Checkout = ({amount}) => {
                   </>
                 ) : (
                   <>
-                    <div className="col-md-6">
+                    {currentAccount && 
+                    (<div className="col-md-6">
                       <label htmlFor="address" className="form-label">
                         Wallet Address
                         {address && (
@@ -565,7 +566,7 @@ const Checkout = ({amount}) => {
                           </p>
                         )}
                       </label>
-                    </div>
+                    </div>)}
                     <div className="d-flex flex-column col-md-6 align-items-center">
                       <label htmlFor="inputPassword4" className="form-label">
                         Amount
